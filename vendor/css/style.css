@@ -171,6 +171,7 @@ nav a:not(:last-child){
     font-family: 'Prata';
     font-size: 42px;
     font-weight: 400;
+    color: #ffffff;
 }
 
 /* --------------------------------------------- */
@@ -399,9 +400,9 @@ nav a:not(:last-child){
 }
 
 
-.container{
+/* .container{
     width: 90%;
-    /* position: absolute; */
+    /* position: absolute; 
     top: 20vh;
     margin-top: 50px;   
     margin-left: 0%;
@@ -411,8 +412,8 @@ nav a:not(:last-child){
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    /* border: 4px black solid; */
-}
+    /* border: 4px black solid; 
+} */
 
 .slider{
     /* width: 80%;
@@ -1093,33 +1094,19 @@ footer div:first-child{
 /* footer end */
 
 /* about start */
-.background>img{
-    margin-top: 4.8%;
-    position: fixed;
-    top:0px;
-    width: 100vw;
-    height: 100vh;
-}
-.About{
-    position: absolute;
-    top: 0px;
-    width: 100vw;
-    height: 63vh;
-    margin-top: 4.8%;
-    background-image: url("image/firstw16.png");
-    /* border: 2px solid black; */
+
+
+
+
+.abouthero{
+    background-image: url("./../../image/spc_about.png");
+    height: 70vh;
+    padding: 70px 50px;
 }
 
-.About h1{
-    position: absolute;
-    top: 30vh;
-    left: 5%;
-    color: white;
-}
 
 .true{ 
-    position: absolute;
-    top: 63vh;
+    
     background-color: white; 
     height: auto;
     /* border: 2px solid black; */
@@ -1129,7 +1116,7 @@ footer div:first-child{
 }
 
 .true>img {
-    width: 50vw;
+    width: 50%;
     height: auto;
     box-shadow: 5px 3px 5px #9d9da0;
 }
@@ -1141,6 +1128,10 @@ footer div:first-child{
 .true div>h4{
     color: #52cbb1;
 
+}
+
+.missvis{
+    background-image: url("./../../image/firstw19.jpg");
 }
 
 .true div>span{
@@ -1182,14 +1173,14 @@ footer div:first-child{
     font-weight: 300;
 }
 
-.missionvision{
+/* .missionvision{
     position: absolute;
     top: 168vh;
     background-color: transparent; 
     width: 100vw;
     height: 80vh;
-    /* border: 2px solid black; */
-}
+    border: 2px solid black;
+} */
 
 .missionstat{
     font: 36px 'Prata';
@@ -1197,10 +1188,13 @@ footer div:first-child{
 }
 
 .missionvision{
-    padding-top: 22vh;
-  text-align: center;
-  color: white;
+    background-image: url("./../../image/firstw19.jpg");
+    height: auto;
+    text-align: center;
+    color: white;
+    padding: 120px;
 }
+
 
 .missionbtn{
     text-align: center;
@@ -1227,8 +1221,7 @@ footer div:first-child{
 }
 
 .child>h2{
-    margin-bottom: 25px;
-    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 button[title~="btn-vision"]{
@@ -1242,20 +1235,11 @@ button[title~="btn-vision"]{
     line-height: 30px;
 } */
 
-.missionvision img{
-    width: 100%;
-    height: 60vh;   
-}
+
 
 .ourmission{
-    position: absolute;
-    top: 248vh;
-    background-color: white; 
-    width: 100vw;
-    height: 100vh;
-    border: 2px solid black;
     display: flex;
-    padding: 10vh;
+    padding: 100px;
     column-gap: 70px;
 }
 
@@ -1266,20 +1250,15 @@ button[title~="btn-vision"]{
     box-shadow: 5px 5px 10px 5px rgb(184, 183, 183);
 }
 
-.ourmision>div{
+/* .ourmision>div{
     padding-top: 40vh;
-}
+} */
 
 
 
 
 .whatwedo{
-    position: absolute;
-    top: 338vh;
-    background-color: white; 
-    width: 100vw;
-    height: 140vh;
-    border: 2px solid black;
+    background-image: url("./../../image/firstw22.jpg");
 }
 
 .whatwedo>img{
@@ -1288,10 +1267,7 @@ button[title~="btn-vision"]{
 }
 
 .business{
-    position: absolute;
-    top: 0px;
-    left: 27vw;
-    margin-top: 10vh;
+    padding-top: 60px;
     text-align: center;
     color: white;
 }
