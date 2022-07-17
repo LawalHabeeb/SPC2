@@ -225,7 +225,7 @@ nav a:not(:last-child){
 .section2{
     
     /* position: absolute; */
-    margin-top:15vh;
+    margin-top: 10px;
     padding-top: 60PX;
     align-items: center;
     /* text-align: center; */
@@ -269,6 +269,22 @@ nav a:not(:last-child){
     font-size: 14px;
 }
 
+.dashboard{
+    font:24px 'Prata';
+    text-decoration: none;
+    color: #ffffff;
+    padding-bottom: 30px;
+}
+
+.explore{
+    margin-top: 25px;
+    font-family: 'Inter', serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 26.3px;
+    color: #ffffff;
+}
+
 .ff1{
     font-weight: 600;
 }
@@ -307,16 +323,12 @@ nav a:not(:last-child){
 }
 
 .section221{
-    /* border: 2px solid black; */
     background-color: #52cbb1;
-    width: 23%;
+    text-align: center;
+    width: 25%;
+    padding: 40px 10px;
     box-shadow: 3px 3px 3px 3px #dadada;
     margin-right: 2%;
-}
-
-.section221:last-child{
-    
-    margin-right: 0px;
 }
 
 .section2 button{
@@ -326,7 +338,9 @@ nav a:not(:last-child){
     background-color: #52cbb1;
     margin: auto;
     border: none;
-    width: fit-content;
+    width: 180px;
+    height: 50px;
+    border-radius: 5px;
     /* border-radius: 12px; */
     padding: 9px;
 }
@@ -1754,8 +1768,7 @@ button[title~="otherservice-btn"]{
     .section2{
     
         /* position: absolute; */
-        margin-top:15vh;
-        padding-top: 60PX;
+        margin-top: 10px;
         align-items: center;
         /* text-align: center; */
         width: 100%;
@@ -1763,7 +1776,7 @@ button[title~="otherservice-btn"]{
       }
     
       .section22{
-        padding-top:10vh;
+        padding-top:10px;
         width: 80%;
         display: flex;
         flex-direction: column;
@@ -1773,8 +1786,9 @@ button[title~="otherservice-btn"]{
     .section221{
         /* border: 2px solid black; */
         background-color: #52cbb1;
+        text-align: center;
         width: 90%;
-        height: 75vh;
+        height: auto;
         box-shadow: 3px 3px 3px 3px #dadada;
         margin-right: 2%;
         margin-bottom: 30px;
