@@ -232,10 +232,10 @@ nav a:not(:last-child){
 /* section1 style start */
 
 .section1{
-    margin-top: 64px; 
     background-image: url("./../../image/firstw16.jpg");
     align-items: center;
     background-size: cover;
+    background-repeat: no-repeat;
     height: 80vh;
     width: 100%;
     vertical-align: center;
@@ -243,10 +243,8 @@ nav a:not(:last-child){
 }
 
 .section1Text{
-    
     padding-top: 140px;
     padding-left: 50px; 
-    height: 50vh;
     width: auto;
 
 }
