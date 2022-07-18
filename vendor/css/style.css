@@ -1292,6 +1292,8 @@ footer div:first-child{
 
 .missionvision{
     background-image: url("./../../image/firstw19.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     height: auto;
     text-align: center;
     color: white;
