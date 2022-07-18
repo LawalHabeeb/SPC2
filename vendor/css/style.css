@@ -171,7 +171,61 @@ nav a:not(:last-child){
     font-family: 'Prata';
     font-size: 42px;
     font-weight: 400;
+    text-transform: capitalize;
     color: #ffffff;
+}
+
+.abouthero{
+    background-image: url("./../../image/spc_about.png");
+}
+
+.accasshero{
+    background-image: url("./../../image/spc_advisory.png");
+}
+
+.corphero{
+    background-image: url("./../../image/spc_finance.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.infhero{
+    background-image: url("./../../image/spc_it.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.learnhero{
+    background-image: url("./../../image/spc_train.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.projhero{
+    background-image: url("./../../image/pheader-blog-1.jpg");
+}
+
+.taxhero{
+    background-image: url("./../../image/spc_tax.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.insighthero{
+    background-image: url("./../../image/SPC_004-scaled.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contacthero{
+    background-image: url("./../../image/spc_contact.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero{
+    height: auto;
+    padding: 200px 50px;
 }
 
 /* --------------------------------------------- */
@@ -1098,11 +1152,6 @@ footer div:first-child{
 
 
 
-.abouthero{
-    background-image: url("./../../image/spc_about.png");
-    height: 70vh;
-    padding: 70px 50px;
-}
 
 
 .true{ 
