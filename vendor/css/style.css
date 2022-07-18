@@ -1765,11 +1765,43 @@ button[title~="otherservice-btn"]{
 /* insight ends */
 
 /* contact start */
-.contact{
-    width: 100vw;
-   
+.allform{
+    padding: 50px;
 }
 
+.contacts{
+    margin-top: 20px;
+    display: flex;
+}
+
+.contactup{
+    display: flex;
+}
+
+.contacticon{
+    margin-right: 20px;
+}
+
+.maindeets{
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+.maindeets h4{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.contactimg{
+    background-image: url("./../../image/image-contacts.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cform{
+    width: 100%;
+    box-shadow: 2px 2px 4px #5f5f5f;
+}
 
 .cancontact{
     width: 100vw;
@@ -2114,9 +2146,18 @@ button[title~="otherservice-btn"]{
         display: block;
     }
 
-    .contactside{
+    .contactside, .contactimg{
         display: none;
     }
+
+    .contactup{
+        display: block;
+    }
+
+    .maindeets{
+        width: 100%;
+    }
+    
 
 
 }   
