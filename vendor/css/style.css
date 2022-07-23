@@ -1607,6 +1607,55 @@ button[title~="otherservice-btn"]{
 
 /* Service Page */
 
+.servicehead{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.allservices, .lastservice{
+    margin: 0 80px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.lastservice{
+    justify-content: center;
+}
+
+.servicename{
+    margin: 30px 0;
+}
+
+.serviceexplorelink{
+    display: flex;
+    position: relative;
+    border-top: 1px solid #5f5f5f;
+    padding: 15px 20px;
+    color: #52c5b6;
+    text-decoration: none;
+}
+
+.serviceexplorelink:hover{
+    background-color: #52c5b6;
+    color: #fff;
+}
+
+.serviceexplorelink i{
+    position: absolute;
+    right: 20px;
+}
+
+.servdash{
+    width: calc(100%/3);
+    margin-right: 20px;
+    box-shadow: 2px 3px 4px #5f5f5f;
+    text-align: center;
+}
+
+.servdash img{
+    width: 100%;
+    height: auto;
+}
 
 /* acctountting and assurance start */
 
@@ -2363,6 +2412,14 @@ button[title~="otherservice-btn"]{
         width: 100%;
     }
     
+    .allservices, .lastservice{
+        display: block;
+    }
+
+    .servdash{
+        width: 100%;
+        margin-bottom: 20px;
+    }
 
 
 }   
