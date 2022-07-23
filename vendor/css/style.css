@@ -159,10 +159,6 @@ nav a:not(:last-child){
     
 } 
 
-
-
-
-
 /* nav ends */
 
 /* hero settings */
@@ -223,12 +219,18 @@ nav a:not(:last-child){
     background-repeat: no-repeat;
 }
 
+.servicehero{
+    background-image: url("./../../image/spc_service.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .hero{
     height: auto;
     padding: 200px 50px;
 }
 
-/* --------------------------------------------- */
+/* -- Index style -- */
 /* section1 style start */
 
 .section1{
@@ -265,6 +267,7 @@ nav a:not(:last-child){
     line-height: 72px;
     color: white;
 }
+
 
 
 
@@ -308,25 +311,131 @@ nav a:not(:last-child){
     opacity: 1;
 }
 
-
-.section21{
-   
-    background-color: rgb(255, 255, 255);
-    width: 30%;
-    margin-left: 20%;
+.bloglist{
+    display: flex;
+    margin: 0 50px;
+    margin-top: -50px;
 }
 
-.section21 h2, .ff1{
+.blogtag{
+    margin-bottom: 10px;
+}
+
+.blogblock{
+    width: calc(100%/3);
+    background-color: #ffffff;
+    box-shadow: 2px 3px 4px #5f5f5f;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 7px;
+}
+
+
+
+.tag{
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font: 11px 'Inter';
+    font-weight: 600;
+    line-height: 11px;
+    color: #ffffff;
+    background-color: #52c5b6;
+    padding: 3px 10px;
+    margin: 3px 5px;
+    border-radius: 10px;
+}
+
+
+.ff1{
     text-transform: uppercase;
     font-family: 'Inter', serif;
     font-size: 14px;
 }
 
-.dashboard{
+.blogarea{
+    background-image: url("./../../image/firstw72.jpg");
+    margin-top: 15px;
+    padding: 70px 50px 120px 50px;
+    color: #ffffff;
+}
+
+.blogbottom{
+    display: flex;
+    margin-top: 15px;
+    border-top: 1px solid #5f5f5f;
+    padding-top: 10px;
+    position: relative;
+}
+
+.goarrow{
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 2px 2px 2px #5b5d69;
+}
+
+.mb15{
+    margin-bottom: 15px;
+}
+
+.belowblogtitle{
+    display: flex;
+    position: relative;
+}
+
+.viewall{
+    position: absolute;
+    right: 0;
+}
+
+.circle-animate{
+    border-color: #ffffff4D;
+    
+}
+
+.icon-bg{
+    background: #52c5b6;
+}
+
+.icon-bg2{
+    background: #30344D;
+}
+
+.icon-bg3{
+    background: #fff;
+}
+
+.icon-box{
+    position: relative;
+    margin-top: 15px;
+    margin: 0 auto;
+}
+
+.icon-main{
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    line-height: 90px;
+    margin-bottom: 17px;
+    border-radius: 50%;
+}
+
+.icon-main svg{
+    width: 38px;
+    fill: #fff;
+    vertical-align: middle;
+}
+
+.dashboardheading{
     font:24px 'Prata';
     text-decoration: none;
-    color: #ffffff;
-    padding-bottom: 30px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: #1b1d21;
 }
 
 .explore{
@@ -336,6 +445,12 @@ nav a:not(:last-child){
     text-decoration: none;
     line-height: 26.3px;
     color: #ffffff;
+}
+
+.explorearea{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
 }
 
 .ff1{
@@ -354,18 +469,77 @@ nav a:not(:last-child){
     color: #52c5b6;
 }
 
-.section21 h1{
+.dashboardheader{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.ff2{
     font-family: 'Prata';
-    font: 36px ;
+    font-size: 36px;
     font-weight: 400;
-    line-height: 43.2px;
+    text-transform: capitalize;
     color: #1b1d21;
 }
 
-.section21{
-    width: 40%;
-    margin: auto;
+.maindashboard{
+    display: flex;
+    padding: 0 50px;
+    margin: 25px 0;
+}
+
+.dash{
+    align-items: center;
     text-align: center;
+    padding: 20px 10px;
+    width: calc(100%/4);
+    margin-right: 20px;
+    border-radius: 7px;
+    box-shadow: 2px 3px 4px #5f5f5f;
+}
+
+.accdashboard{
+    background-color: #30344D;
+    color: #ffffff;
+}
+
+.findashboard{
+    background-color: #f5f5f5;
+    color: #1b1d21;
+}
+
+.itdashboard{
+    background-color: #52c5b6;
+    color: #ffffff;
+}
+
+.learndashboard{
+    background-color: #30344D;
+    color: #ffffff;
+}
+
+.linkd{
+    margin-top: 15px;
+}
+
+.dashlink{
+    color: #fff;
+    text-decoration: none;
+    font: 14px 'Inter';
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.explorebtn{
+    background-color: #52c5b6;
+    text-decoration: none;
+    font: 14px 'Inter';
+    font-weight: 600;
+    color: #ffffff;
+    margin: 20px 0;
+    text-transform: uppercase;
+    padding: 15px;
+    border-radius: 7px;
 }
 
 .section22{
@@ -556,13 +730,10 @@ nav a:not(:last-child){
 }
 
 .entry-meta{
-    margin: auto;
-    border-top: 1px solid #818181;
+    font: 13px 'Inter';
     color: #818181;
-    font: 13px inter, sen-serif;
-    padding-top: 15px;
-    padding-left: 10%;
-    padding-right: 3%;
+    font-weight: 600;
+
 }
 /* first slide end */
 
@@ -765,9 +936,22 @@ nav a:not(:last-child){
 }
 
 .clientlogo{
-    font-family: 'Inter', serif;
-    font-size: 24px;
-    color: #1b1d21;
+    padding: 10px 50px;
+}
+
+.clientarea{
+    text-align: center;
+    margin: 50px 0px;
+    background-color: #30344D;
+}
+
+.clienttitle{
+    font: 24px 'Inter';
+    color: #fff;
+}
+
+.homeform{
+    display: flex;
 }
 
 .color2{
@@ -1065,6 +1249,13 @@ footer div:first-child{
 
 .footer2 ol{
     list-style-type: none;
+}
+
+.clientform{
+    font: 17px 'Roboto Condensed';
+    line-height: 31.9px;
+    color: #52c5b6;
+    font-weight: 700;
 }
 
 
@@ -1413,6 +1604,9 @@ button[title~="otherservice-btn"]{
 }
 
 /* about ends */
+
+/* Service Page */
+
 
 /* acctountting and assurance start */
 
@@ -1883,6 +2077,8 @@ button[title~="otherservice-btn"]{
         display: none;
     }
 
+    /* Index page */
+
     .section1{
         margin-top: 64px; 
         background-image: url("./../../image/firstw16.jpg");
@@ -1892,6 +2088,17 @@ button[title~="otherservice-btn"]{
         width: 100%;
         
     }
+
+    .maindashboard, .bloglist{
+        display: block;
+        width: 100%;
+    }
+
+    .dash, .blogblock{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    
 
     .section2{
     
