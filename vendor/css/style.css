@@ -195,10 +195,14 @@ nav a:not(:last-child){
     background-image: url("./../../image/spc_train.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .projhero{
     background-image: url("./../../image/pheader-blog-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .taxhero{
@@ -223,6 +227,13 @@ nav a:not(:last-child){
     background-image: url("./../../image/spc_service.png");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.eventhero{
+    background-image: url("./../../image/spc_event.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .hero{
