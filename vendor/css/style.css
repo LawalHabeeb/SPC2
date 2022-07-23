@@ -279,6 +279,13 @@ nav a:not(:last-child){
     color: white;
 }
 
+.home-contact-icon{
+    background-image: url("./../../image/firstw40.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    
+}
+
 
 
 
