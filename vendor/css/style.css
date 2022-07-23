@@ -441,6 +441,28 @@ nav a:not(:last-child){
     vertical-align: middle;
 }
 
+.icon-mains{
+    background: #52c5b633;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 17px;
+    margin-right: 20px;
+}
+
+.icon-mains svg{
+    width: 27px;
+    fill: #52c5b6;
+    vertical-align: middle;
+}
+
+.maininfo{
+    margin-top: 10px;
+}
+
 .dashboardheading{
     font:24px 'Prata';
     text-decoration: none;
@@ -2032,11 +2054,23 @@ button[title~="otherservice-btn"]{
 
 .contacticon{
     margin-right: 20px;
+    background-color: #dcf3f0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.contacticon i{
+    display: flex;
+    color: #52c5b6;
+    justify-content: center;
+    font-size: 22px;
+    padding: auto 0;
 }
 
 .maindeets{
-    width: 40%;
-    margin-bottom: 30px;
+    margin-bottom: 90px;
+    margin-right: -120px;
 }
 
 .maindeets h4{
@@ -2046,6 +2080,7 @@ button[title~="otherservice-btn"]{
 
 .contactimg{
     background-image: url("./../../image/image-contacts.png");
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
 }
