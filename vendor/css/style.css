@@ -9,6 +9,8 @@
 
 :root{
     --clr-base: #52cbb1;
+    --icon-size: 21px;
+    --icon-padding: 1.25em;
 
 }
 
@@ -51,7 +53,7 @@ body{
 /* scroll to ends */
 
 /* nav start */
-nav{
+header{
     width: 100%;
     height: auto;
     padding: 5px 80px;
@@ -69,7 +71,7 @@ nav{
     
 } */
 
-nav .navlinks{
+header .navlinks{
     padding-top: 50px;
     margin-right: 50px;
     position: absolute;
@@ -158,6 +160,10 @@ nav a:not(:last-child){
     transform: translateY(10px) 
     
 } 
+
+.hamburger{
+    display: none;
+}
 
 /* nav ends */
 
@@ -1315,10 +1321,29 @@ footer{
 
 .social-icons{
     background-color: #1d2035;
-    font-size: 16px,25px;
     border-radius: 50%;
     margin-right: 10px;
+    padding: 0 auto;
 }
+
+.socialicon{
+    font-size: var(--icon-size,25px);
+    line-height: var(--icon-size,25px);
+    width: calc(var(--icon-size, 25px) + (2 * var(--icon-padding, .5em)));
+    height: calc(var(--icon-size, 25px) + (2 * var(--icon-padding, .5em)));
+}
+
+.social-icons:last-child{
+    margin: 0;
+}
+
+.social-icons i{
+    width: 1em;
+    height: 1em;
+    position: relative;
+    display: inline-block;
+}
+
 
 .top-section div{
     width: calc(100%/3);
@@ -2214,11 +2239,50 @@ button[title~="otherservice-btn"]{
     body{
         width: 100%;
     }
-    
 
     nav{
+        background-color: #2a5e76;
+    }
+    
+
+    .navlinks{
         display: none;
     }
+
+    .hamburger{
+        position: relative;
+        display: block;
+        width: 40px;
+        cursor: pointer;
+        appearance: none;
+        background: none;
+        outline: none;
+        border: none;
+    }
+
+    .hamburger .bar, .hamburger:after, .hamburger:before{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: #fff;
+        margin: 6px 0px;
+        transition: 0.4s;
+    }
+
+    .hamburger.is-active::before{
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .hamburger.is-active .bar{
+        opacity: 0;
+    }
+
+    .hamburger.is-active::after{
+        transform: rotate(45deg) translate(-8px, -6px); 
+    }
+
+
 
     /* Index page */
 
