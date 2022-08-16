@@ -101,4 +101,3 @@ setInterval(function() {
     
 }, 4000);
 
-// contain.style.transform = `translateX(${-idx * 310 }px)`;

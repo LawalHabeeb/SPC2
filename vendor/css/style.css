@@ -123,7 +123,7 @@ nav a:not(:last-child){
     color: black;
     cursor: pointer;
     display: block;
-    width: 20.7vw;
+    min-width: fit-content;
     padding: 15px;
     border-bottom: 1px solid rgb(196, 195, 195);
 
@@ -2240,8 +2240,9 @@ button[title~="otherservice-btn"]{
         width: 100%;
     }
 
-    nav{
-        background-color: #2a5e76;
+    header{
+        position: relative;
+        background-color: #52c5b6;
     }
     
 
@@ -2250,7 +2251,10 @@ button[title~="otherservice-btn"]{
     }
 
     .hamburger{
-        position: relative;
+        position: absolute;
+        right: 50px;
+        top: 50%;
+        transform: translateY(-15px);
         display: block;
         width: 40px;
         cursor: pointer;
@@ -2280,6 +2284,52 @@ button[title~="otherservice-btn"]{
 
     .hamburger.is-active::after{
         transform: rotate(45deg) translate(-8px, -6px); 
+    }
+
+    nav a:not(:last-child){
+        margin: 0 auto 16px;
+    }
+
+    .mobile-nav{
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        min-height: 100vh;
+        display: block;
+        background-color: #53c6b6;
+        padding-top: 120px;
+        transition: 0.4s;
+    }
+
+    .mobile-nav.is-active{
+        left: 0;
+    }
+
+    .mobile-nav a{
+        display: block;
+        text-align: center;
+        width: 150px;
+        margin: 0 auto 16px;
+        padding: 12px 16px;
+        background-color: #245750;
+        color: #fff;
+    }
+
+    .tooltips-container{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .tooltip-content{
+        width: max-content;
+    }
+
+    .tooltip-content a{
+        width: fit-content;
+        background-color: #fff;
+        color: #1b1d21;
     }
 
 
